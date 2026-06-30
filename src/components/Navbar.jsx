@@ -10,7 +10,7 @@ import {
   FaUserTie,
 } from "react-icons/fa";
 
-import "../styles/Navbar.css";
+import "../styles/navbar.css";
 
 function Navbar() {
   return (
