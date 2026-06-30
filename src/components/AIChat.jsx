@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { askGemini } from "../gemini";
 import "./AIChat.css";
 
 function AIChat() {
