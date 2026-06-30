@@ -1,0 +1,32 @@
+.quick-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin:40px 0;
+}
+
+.quick-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.quick-card:hover{
+    transform:translateY(-8px);
+}
+
+.quick-icon{
+    font-size:38px;
+}
+
+.quick-card h2{
+    margin:15px 0 8px;
+    color:#2563eb;
+}
+
+.quick-card p{
+    color:#666;
+}

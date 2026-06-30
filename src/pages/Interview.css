@@ -1,0 +1,88 @@
+.interview-page {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.interview-page h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.interview-page p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.interview-page select {
+  width: 300px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.interview-page button {
+  padding: 14px 30px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.interview-page button:hover {
+  background: #1d4ed8;
+}
+
+.question-box {
+  margin-top: 40px;
+}
+
+.question-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.question-card h3 {
+  color: #2563eb;
+}
+
+.question-card textarea {
+  width: 100%;
+  min-height: 120px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  resize: vertical;
+  font-size: 15px;
+}
+
+.question-card textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.submit-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 40px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #15803d;
+}

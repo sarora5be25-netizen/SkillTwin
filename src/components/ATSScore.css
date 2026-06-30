@@ -1,0 +1,46 @@
+.ats-card{
+    margin-top:40px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.ats-card h2{
+    text-align:center;
+}
+
+.circle-score{
+    width:170px;
+    height:170px;
+    border:12px solid #2563eb;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px auto;
+    font-size:48px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.ats-card h3{
+    text-align:center;
+    color:#16a34a;
+    margin-bottom:30px;
+}
+
+.bar{
+    margin:20px 0;
+}
+
+.bar span{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.bar progress{
+    width:100%;
+    height:16px;
+}

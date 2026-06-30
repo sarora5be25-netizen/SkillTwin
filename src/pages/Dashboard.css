@@ -1,0 +1,88 @@
+.dashboard-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.dashboard-page h1 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 45px;
+}
+
+.dashboard-page p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px);
+}
+
+.big-score {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 42px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.small-score {
+  font-size: 42px;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg,#2563eb,#60a5fa);
+  border-radius: 20px;
+}
+
+.recommendation {
+  margin-top: 40px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.recommendation ul {
+  margin-top: 20px;
+}
+
+.recommendation li {
+  margin: 12px 0;
+  font-size: 18px;
+}

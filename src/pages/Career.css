@@ -1,0 +1,72 @@
+.career-page {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.career-page h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.career-page p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.career-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.career-buttons button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.career-buttons button:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.career-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.career-card h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.career-card h3 {
+  margin: 15px 0;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-list span {
+  background: #dbeafe;
+  color: #1e3a8a;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+}
