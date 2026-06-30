@@ -1,42 +1,49 @@
 import { useState } from "react";
 import "./AIChat.css";
 
+const replies = {
+  resume:
+    "Keep your resume to one page. Add measurable achievements, projects and GitHub links.",
+  react:
+    "Learn React Router, Context API, Node.js, Express and MongoDB next.",
+  internship:
+    "Build projects, solve DSA, optimize LinkedIn, keep GitHub active and apply consistently.",
+  github:
+    "Write proper READMEs, pin your best repositories and commit regularly.",
+  interview:
+    "Practice HR + DSA + Core CS questions. Mock interviews help a lot.",
+  roadmap:
+    "Complete HTML → CSS → JavaScript → React → Node → MongoDB → Deployment.",
+};
+
 function AIChat() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState([]);
-  const [loading, setLoading] = useState(false);
 
-  const askAI = async () => {
+  const askAI = () => {
     if (!message.trim()) return;
 
-    const question = message;
+    const input = message.toLowerCase();
 
-    setLoading(true);
+    let answer =
+      "I'm still learning. Ask about resume, React, GitHub, internship, interview or roadmap.";
 
-    try {
-      const answer = await askGemini(question);
+    Object.keys(replies).forEach((key) => {
+      if (input.includes(key)) {
+        answer = replies[key];
+      }
+    });
 
-      setChat((prev) => [
-        ...prev,
-        {
-          question,
-          answer,
-        },
-      ]);
+    setChat((prev) => [
+      ...prev,
+      {
+        question: message,
+        answer,
+      },
+    ]);
 
-      setMessage("");
-    } catch (err) {
-      setChat((prev) => [
-        ...prev,
-        {
-          question,
-          answer: "Unable to contact Gemini AI.",
-        },
-      ]);
-    }
-
-    setLoading(false);
+    setMessage("");
   };
 
   return (
@@ -50,7 +57,6 @@ function AIChat() {
 
       {open && (
         <div className="chat-box">
-
           <h2>AI Career Assistant</h2>
 
           <div className="chat-history">
@@ -72,11 +78,9 @@ function AIChat() {
           <button
             className="send-btn"
             onClick={askAI}
-            disabled={loading}
           >
-            {loading ? "Thinking..." : "Ask AI"}
+            Ask AI
           </button>
-
         </div>
       )}
     </>
