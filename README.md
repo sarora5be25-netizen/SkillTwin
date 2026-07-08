@@ -1,16 +1,70 @@
-# React + Vite
+# SkillTwin
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+SkillTwin is a career development platform built to help students strengthen their professional profiles and prepare for internships and placements.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Resume Analyzer
+- GitHub Profile Analysis
+- Career Dashboard
+- Career Guidance
+- Interview Preparation
+- Google Authentication
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Firebase
+- Git
+- GitHub
+- Vercel
 
-## Expanding the Oxlint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+https://skill-twin-cpji.vercel.app
+
+## GitHub Repository
+
+https://github.com/sarora5be25-netizen/SkillTwin
+
+## Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/sarora5be25-netizen/SkillTwin.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+## Future Improvements
+
+- AI powered career recommendations
+- Resume ATS optimization
+- GitHub contribution insights
+- Personalized interview feedback
+
+## Author
+
+**Sirjan Kaur**
+
+B.Tech Student at Thapar Institute of Engineering and Technology
